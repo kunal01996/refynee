@@ -1,38 +1,159 @@
 .App {
+  padding: 20px;
+}
+
+p {
+  margin-bottom: unset;
+}
+
+.home-icon {
+  height: 50px;
+  float: left;
+}
+
+.search-input {
+  height: 50px;
+  width: 40vw;
+  border: none;
+  box-shadow: 0px 0px 1px rgb(0 0 0 / 8%), 0px 4px 12px -4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: url(./assets/images/search-icon.svg) 96% center no-repeat #fff !important;
+}
+
+::placeholder {
+  color: var(--bs-gray-500);
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.admin-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(0 0 0 / 35%);
+}
+
+.admin-role {
+  font-size: 12px;
+  color: rgb(0 0 0 / 25%);
+}
+
+.position-relative {
+  position: relative;
+}
+
+.john-doe {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.status {
+  position: absolute;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #80d480;
+  border-radius: 50%;
+  top: 28px;
+  left: 43px;
+
+}
+
+.visitors-text {
+  font-size: 35px;
+}
+
+.visitor-btn {
+  background-color:#6c35e4;
+  color: #fff;
+}
+
+.blue-color {
+  color:#6c35e4;
+}
+
+tbody td:not(td:first-child) {
+  padding-left: unset !important;
+}
+
+tbody td:first-child {
+  padding-left: 20px;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+thead td:first-child {
+  padding-left: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+thead td {
+  height: 60px;
+    vertical-align: middle;
+    background-color: rgb(0 0 0 / 5%);
+    border: 5px;
+    font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
-  flex-direction: column;
+}
+
+.table-container {
+  margin: 40px 10%;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* #scrollableDiv {
+  height: 300px;
+  overflow: auto;
+} */
+
+.infinite-scroll-component  {
+  overflow: hidden !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pill {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 2px 10px;
+}
+
+.pill-inactive {
+  background-color: #6c757d3d;
+  color: #6c757de3;
+}
+
+tbody tr {
+  height: 70px;
+    vertical-align: middle;
+}
+
+tbody tr td:first-child {
+  cursor: pointer;  
+}
+
+.pill-active {
+  background-color: #1987543b;
+  color: #198754;
+}
+
+.pill-removed {
+  background-color: #e86a2c4a;
+  color: #e86a2cfc;
+}
+
+.no-flex-end {
+  align-items: flex-start;
+}
+
+.infinite-scroll-component__outerdiv {
+  width: 100%;
 }
